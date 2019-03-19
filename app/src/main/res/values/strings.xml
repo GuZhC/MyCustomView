@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">HenCodeMyView</string>
+    <string name="app_name">MyCustomView</string>
+    <string name="cicler_p">圆饼</string>
+    <string name="yibiaopan">仪表盘</string>
+    <string name="cicler_image">圆头像</string>
+    <string name="text_location">text位置</string>
+    <string name="text_and_image"><![CDATA[文&图]]></string>
+    <string name="material_editText">MaterialEt</string>
+    <string name="camera_view">CameraView</string>
+    <string name="animation_view">翻转</string>
 </resources>
