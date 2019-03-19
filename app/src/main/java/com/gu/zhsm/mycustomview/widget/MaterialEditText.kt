@@ -1,4 +1,4 @@
-package com.gu.zhsm.hencodemyview.widget
+package com.gu.zhsm.mycustomview.widget
 
 import android.animation.ObjectAnimator
 import android.content.Context
@@ -10,8 +10,8 @@ import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
 import android.util.AttributeSet
-import com.gu.zhsm.hencodemyview.R
-import com.gu.zhsm.hencodemyview.Utils
+import com.gu.zhsm.mycustomview.R
+import com.gu.zhsm.mycustomview.Utils
 
 /**
  * Created by GuZhC on 2018/11/2.

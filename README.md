@@ -1,8 +1,8 @@
 # MyCustomView
 多种自定义View练习
 
-![image](/app/src/main/res/myres/animate.gif)![image](/app/src/main/res/myres/material_et.gif)
-![image](/app/src/main/res/myres/cicler_p.jpg)![image](/app/src/main/res/myres/text_view.jpg)
-![image](/app/src/main/res/myres/yibiaopan.jpg)![image](/app/src/main/res/myres/ciclerImage.jpg)
+![image](/myres/animate.gif)![image](/material_et.gif)
+![image](/myres/cicler_p.jpg)![image](/myres/text_view.jpg)
+![image](/myres/yibiaopan.jpg)![image](/myres/ciclerImage.jpg)
 
 

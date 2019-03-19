@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:background="#30ff0000">
 
-        <com.gu.zhsm.hencodemyview.widget.MaterialEditText
+        <com.gu.zhsm.mycustomview.widget.MaterialEditText
             android:id="@+id/editText"
             app:useFloatingLabel="true"
             android:layout_width="match_parent"

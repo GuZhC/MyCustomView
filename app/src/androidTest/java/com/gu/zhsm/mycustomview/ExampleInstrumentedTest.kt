@@ -1,4 +1,4 @@
-package com.gu.zhsm.hencodemyview
+package com.gu.zhsm.mycustomview
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

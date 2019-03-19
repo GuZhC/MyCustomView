@@ -1,4 +1,4 @@
-package com.gu.zhsm.hencodemyview
+package com.gu.zhsm.mycustomview
 
 import org.junit.Test
 

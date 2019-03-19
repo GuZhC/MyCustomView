@@ -1,4 +1,4 @@
-package com.gu.zhsm.hencodemyview.widget
+package com.gu.zhsm.mycustomview.widget
 
 import android.content.Context
 import android.graphics.*
@@ -6,7 +6,7 @@ import android.os.Build
 import android.support.annotation.RequiresApi
 import android.util.AttributeSet
 import android.view.View
-import com.gu.zhsm.hencodemyview.Utils
+import com.gu.zhsm.mycustomview.Utils
 
 /**
  * Created by GuZhC on 2018/10/25.
