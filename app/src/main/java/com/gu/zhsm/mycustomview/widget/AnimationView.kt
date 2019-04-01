@@ -1,5 +1,7 @@
 package com.gu.zhsm.mycustomview.widget
 
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.content.Context
 import android.graphics.Camera
 import android.graphics.Canvas
@@ -22,21 +24,21 @@ class AnimationView(context: Context?, attrs: AttributeSet?) : View(context, att
     internal var topFlip = 0f
     internal var bottomFlip = 0f
     internal var flipRotation = 0f
-//    var bottomFlipAnimator = ObjectAnimator.ofFloat(view, "bottomFlip", 45f)
-//    bottomFlipAnimator.duration = 1500
-//
-//    var flipRotationAnimator = ObjectAnimator.ofFloat(view, "flipRotation", 270f)
-//    flipRotationAnimator.duration = 1500
-//
-//    var topFlipAnimator = ObjectAnimator.ofFloat(view, "topFlip", - 45f)
-//    topFlipAnimator.duration = 1500
-//
-//    var animatorSet =  AnimatorSet()
-//    animatorSet.playSequentially(bottomFlipAnimator, flipRotationAnimator, topFlipAnimator)
-//    animatorSet.startDelay = 1000
-//    animatorSet.start()
+    var  animatorSet=  AnimatorSet()
+
     init{
         camera.setLocation(0f, 0f, Utils.getZForCamera()) // -8 = -8 * 72
+        var bottomFlipAnimator = ObjectAnimator.ofFloat(this, "bottomFlip", 45f)
+        bottomFlipAnimator.duration = 1500
+
+        var flipRotationAnimator = ObjectAnimator.ofFloat(this, "flipRotation", 270f)
+        flipRotationAnimator.duration = 1500
+
+        var topFlipAnimator = ObjectAnimator.ofFloat(this, "topFlip", - 45f)
+        topFlipAnimator.duration = 1500
+
+        animatorSet.playSequentially(bottomFlipAnimator, flipRotationAnimator, topFlipAnimator)
+        animatorSet.startDelay = 500
     }
 
     fun getTopFlip(): Float {
@@ -98,4 +100,8 @@ class AnimationView(context: Context?, attrs: AttributeSet?) : View(context, att
         canvas.restore()
     }
 
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        animatorSet.start()
+    }
 }
